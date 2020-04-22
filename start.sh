@@ -2,7 +2,7 @@
 m=$(pwd)
 
 
-echo "alias sudo="'sudo '"" >> ~/.bashrc
+echo "alias sudo="\'sudo \'"" >> ~/.bashrc
 
 echo "alias userGenerate="$m/create.sh"" >> ~/.bashrc
 echo "alias permit="$m/permission.sh"" >> ~/.bashrc 
