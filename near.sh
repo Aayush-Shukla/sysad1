@@ -63,13 +63,14 @@ do
 
 
 
-	co=0
-	arlen=${#dist[*]}
+co=0
+arlen=${#dist[*]}
 
 readarray -t sorted < <(
-while [ $co -lt $arlen ]; 
-do echo -e "$(echo ${dist[co]} | awk '{print $1}') \t$(echo ${dist[co]} | awk '{print $2}')\t$(echo ${dist[co]} | awk '{print $3}')" && ((co++)); 
-done | sort -n)
+    while [ $co -lt $arlen ]; 
+    do 
+        echo -e "$(echo ${dist[co]} | awk '{print $1}') \t$(echo ${dist[co]} | awk '{print $2}')\t$(echo ${dist[co]} | awk '{print $3}')" && ((co++)); 
+    done | sort -n)
 
 
 
